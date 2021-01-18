@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9cf8d91effc84614b51b01cdfed234ae {
+                    position: relative;
+                    width: 60.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9cf8d91effc84614b51b01cdfed234ae" ></div>
+        
+</body>
+<script>    
+    
+            var map_9cf8d91effc84614b51b01cdfed234ae = L.map(
+                "map_9cf8d91effc84614b51b01cdfed234ae",
+                {
+                    center: [65.369781, 27.171806],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_965a2d5db16a4e509b3f66ded756d09d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9cf8d91effc84614b51b01cdfed234ae);
+        
+    
+            var marker_403162ad1be449f091cbf09889e90b75 = L.marker(
+                [65.369781, 27.171806],
+                {}
+            ).addTo(map_9cf8d91effc84614b51b01cdfed234ae);
+        
+    
+        var popup_1b21af03dee6404194dbf7d3fe419c9a = L.popup({"maxWidth": 100});
+
+        
+            var i_frame_726650e836254344beea7df84abc5188 = $(`<iframe src="data:text/html;charset=utf-8;base64,CiAgICA8cD48Yj5NZXJra2k8L2I+PC9wPjxicj5UZWtzYW4KICAgIDxwPjxiPk1hbGxpPC9iPjwvcD4gPGJyPlMuMjAyCiAgICA8cD48Yj5IdW9sbGV0dHU8L2I+PC9wPiA8YnI+MTkuNS4yMDE3" width="100" style="border:none !important;" height="100"></iframe>`)[0];
+            popup_1b21af03dee6404194dbf7d3fe419c9a.setContent(i_frame_726650e836254344beea7df84abc5188);
+        
+
+        marker_403162ad1be449f091cbf09889e90b75.bindPopup(popup_1b21af03dee6404194dbf7d3fe419c9a)
+        ;
+
+        
+    
+    
+            var marker_834907aa6b614499868c719204a3f8c3 = L.marker(
+                [60.451813, 22.26663],
+                {}
+            ).addTo(map_9cf8d91effc84614b51b01cdfed234ae);
+        
+    
+        var popup_0737674e22c44ab5a8f2e1c2132abb7a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_97e96b61ea934cde8716a8314fa6ceb1 = $(`<div id="html_97e96b61ea934cde8716a8314fa6ceb1" style="width: 100.0%; height: 100.0%;">('Merkki:', 'Doosan', '\nMalli:', 'T-23', '\nHuollettu:', '20.3.2020', '\nSijainti:', 'Paloasema')</div>`)[0];
+            popup_0737674e22c44ab5a8f2e1c2132abb7a.setContent(html_97e96b61ea934cde8716a8314fa6ceb1);
+        
+
+        marker_834907aa6b614499868c719204a3f8c3.bindPopup(popup_0737674e22c44ab5a8f2e1c2132abb7a)
+        ;
+
+        
+    
+    
+            marker_834907aa6b614499868c719204a3f8c3.bindTooltip(
+                `<div>
+                     Klikkaa lisätietoja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b03dffc23f54fe59c8e8b0bc7d88ac6 = L.marker(
+                [61.49911, 23.7871],
+                {}
+            ).addTo(map_9cf8d91effc84614b51b01cdfed234ae);
+        
+    
+        var popup_63b4b37fb93e4c8482b08064a4065532 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0c6beee4369e44b98bfe2871e4d102ef = $(`<div id="html_0c6beee4369e44b98bfe2871e4d102ef" style="width: 100.0%; height: 100.0%;">('Merkki:', 'Teksan', '\nMalli:', 'S.202', '\nHuollettu:', '19.5.2017', '\nSijainti:', 'Sairaala')</div>`)[0];
+            popup_63b4b37fb93e4c8482b08064a4065532.setContent(html_0c6beee4369e44b98bfe2871e4d102ef);
+        
+
+        marker_8b03dffc23f54fe59c8e8b0bc7d88ac6.bindPopup(popup_63b4b37fb93e4c8482b08064a4065532)
+        ;
+
+        
+    
+    
+            marker_8b03dffc23f54fe59c8e8b0bc7d88ac6.bindTooltip(
+                `<div>
+                     Klikkaa lisätietoja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0f68392608194f608117ab22f5be5c4b = L.marker(
+                [62.60109, 29.76353],
+                {}
+            ).addTo(map_9cf8d91effc84614b51b01cdfed234ae);
+        
+    
+        var popup_d908c3ff250a4b6d98b76f7872e6d5d3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4eb13965bf240598cc475bfa28b0cef = $(`<div id="html_e4eb13965bf240598cc475bfa28b0cef" style="width: 100.0%; height: 100.0%;">('Merkki:', 'Teksan', '\nMalli:', 3030, '\nHuollettu:', '2.4.2018', '\nSijainti:', 'Kauppakeskus')</div>`)[0];
+            popup_d908c3ff250a4b6d98b76f7872e6d5d3.setContent(html_e4eb13965bf240598cc475bfa28b0cef);
+        
+
+        marker_0f68392608194f608117ab22f5be5c4b.bindPopup(popup_d908c3ff250a4b6d98b76f7872e6d5d3)
+        ;
+
+        
+    
+    
+            marker_0f68392608194f608117ab22f5be5c4b.bindTooltip(
+                `<div>
+                     Klikkaa lisätietoja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d83d426ad384f00808736f2115f5d24 = L.marker(
+                [62.79446, 22.82822],
+                {}
+            ).addTo(map_9cf8d91effc84614b51b01cdfed234ae);
+        
+    
+        var popup_274d84c3abeb4afe999ab049a09f4a9b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0869dd5c7370457fab47fb7fa789b4c8 = $(`<div id="html_0869dd5c7370457fab47fb7fa789b4c8" style="width: 100.0%; height: 100.0%;">('Merkki:', 'Doosan', '\nMalli:', 201, '\nHuollettu:', '20.5.2020', '\nSijainti:', 'Koulu')</div>`)[0];
+            popup_274d84c3abeb4afe999ab049a09f4a9b.setContent(html_0869dd5c7370457fab47fb7fa789b4c8);
+        
+
+        marker_0d83d426ad384f00808736f2115f5d24.bindPopup(popup_274d84c3abeb4afe999ab049a09f4a9b)
+        ;
+
+        
+    
+    
+            marker_0d83d426ad384f00808736f2115f5d24.bindTooltip(
+                `<div>
+                     Klikkaa lisätietoja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_418852199a654980b4e4f2330511a0ac = L.marker(
+                [60.1733244, 24.9410248],
+                {}
+            ).addTo(map_9cf8d91effc84614b51b01cdfed234ae);
+        
+    
+        var popup_3159e88d70f540498e04282b90febd5f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_348684a130814751955544eaf3a2c938 = $(`<div id="html_348684a130814751955544eaf3a2c938" style="width: 100.0%; height: 100.0%;">('Merkki:', 'John Deere', '\nMalli:', 2039, '\nHuollettu:', '1.1.2021', '\nSijainti:', 'Laitos')</div>`)[0];
+            popup_3159e88d70f540498e04282b90febd5f.setContent(html_348684a130814751955544eaf3a2c938);
+        
+
+        marker_418852199a654980b4e4f2330511a0ac.bindPopup(popup_3159e88d70f540498e04282b90febd5f)
+        ;
+
+        
+    
+    
+            marker_418852199a654980b4e4f2330511a0ac.bindTooltip(
+                `<div>
+                     Klikkaa lisätietoja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4522a9bb465d4c77927822ba706371f1 = L.marker(
+                [60.8767, 22.7415],
+                {}
+            ).addTo(map_9cf8d91effc84614b51b01cdfed234ae);
+        
+    
+        var popup_ae71fae5709b4df59c9435d3748daaa1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ad6459f1a49e4f2d8d7dbe6aee32eda0 = $(`<div id="html_ad6459f1a49e4f2d8d7dbe6aee32eda0" style="width: 100.0%; height: 100.0%;">('Merkki:', 'Perkins', '\nMalli:', 2947, '\nHuollettu:', '13.4.2014', '\nSijainti:', 'Voimala')</div>`)[0];
+            popup_ae71fae5709b4df59c9435d3748daaa1.setContent(html_ad6459f1a49e4f2d8d7dbe6aee32eda0);
+        
+
+        marker_4522a9bb465d4c77927822ba706371f1.bindPopup(popup_ae71fae5709b4df59c9435d3748daaa1)
+        ;
+
+        
+    
+    
+            marker_4522a9bb465d4c77927822ba706371f1.bindTooltip(
+                `<div>
+                     Klikkaa lisätietoja
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
