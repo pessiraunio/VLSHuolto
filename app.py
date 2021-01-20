@@ -6,7 +6,8 @@ import pandas as pd
 
 #Kerätään data excelistä.
 
-data_file = pd.ExcelFile(r"C:\\Users\\pessi\Documents\\Python Scripts\\VLS-Huollot\\excel.xlsx")
+data_file = pd.ExcelFile(r"C:\\Users\\Pepo\\Documents\\Python\\VLS-Huolto\\VLSHuolto\\excel.xlsx") #Polku pöytäkoneella
+#data_file = pd.ExcelFile(r"C:\\Users\\pessi\Documents\\Python Scripts\\VLS-Huollot\\excel.xlsx") #Polku läppärillä
 
 columns_in_file = pd.read_excel(data_file,"Sheet1")
 
@@ -21,13 +22,10 @@ class MainClass():
     Eastern = pd.read_excel(data_file, "Sheet1", usecols="D")
 
 
-
-    #services = list(map(lambda x: (x.time)))
-
     #rakennetaan kartta
     map_fin = folium.Map(location=[65.369781, 27.171806], zoom_start=6, width='60%', height='100%')
 
-
+    #Html ja iframen testailua
     html = f'''<p><b>Merkki</b></p><br>{Merkki[1]}
     <p><b>Malli</b></p> <br>{Malli[1]}
     <p><b>Huollettu</b></p> <br>{Huollettu[1]}'''
@@ -47,7 +45,9 @@ class MainClass():
         tooltip=("Klikkaa lisätietoja") #Tiedot kun leijuu hiirellä
         folium.map.Marker(
             location=[Northern.loc[i], Eastern.loc[i]], 
-            popup=('Merkki:',Merkki[i], '\nMalli:',Malli[i],'\nHuollettu:', Huollettu[i], '\nSijainti:', Sijainti[i]), 
+            popup=(f'''<p><b>Merkki</b></p><br>{Merkki[i]}
+                        <p><b>Malli</b></p> <br>{Malli[i]}
+                        <p><b>Huollettu</b></p> <br>{Huollettu[i]}'''), 
             tooltip=tooltip).add_to(map_fin)
 
     #luodaan html.sivu
